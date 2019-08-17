@@ -58,7 +58,7 @@ if(isset($_POST['login-submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>    
-    <title>E-Cash Rektorat</title>
+    <title>Kas Keuangan</title>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Optional theme -->

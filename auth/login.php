@@ -57,7 +57,8 @@ if(isset($_POST['login-submit'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>   
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url ?>../assets/pixeladmin-lite/plugins/images/icon_web.png"> 
     <title>Kas Keuangan</title>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

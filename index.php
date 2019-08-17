@@ -56,7 +56,7 @@ $saldo = $pemasukan - $pengeluaran;
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url ?>assets/pixeladmin-lite/plugins/images/favicon.png">
-    <title>.:: Kas Rektorat ::.</title>
+    <title>Kas  Keuangan</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url ?>assets/pixeladmin-lite/html/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->

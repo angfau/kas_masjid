@@ -66,7 +66,7 @@ if(isset($_POST['login-submit'])) {
 <style>
 body {
     padding-top: 90px;
-    background-image: url(../assets/bk.jpg);
+    background-image: url(../assets/images.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ body {
 									</div>
 									<div class="form-group text-center">
 										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-										<label for="remember"> Ingat Aku Terus Gak ?</label>
+										<label for="remember"> remember ?</label>
 									</div>
 									<div class="form-group">
 										<div class="row">

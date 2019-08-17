@@ -66,7 +66,7 @@ if(isset($_POST['login-submit'])) {
 <style>
 body {
     padding-top: 90px;
-    background-image: url(../assets/images.jpg);
+    background-image: url(../assets/Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }

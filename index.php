@@ -276,7 +276,7 @@ $saldo = $pemasukan - $pengeluaran;
 
         $.toast({
             heading: 'Selamat Datang',
-            text: 'Aplikasi pengeloala Kas Keuangan Masjid Nurul Iman.',
+            text: 'Aplikasi pengeloala Kas Keuangan Masjid Nurul Huda.',
             position: 'top-right',
             loaderBg: '#ff6849',
             icon: 'info',
@@ -313,7 +313,7 @@ $saldo = $pemasukan - $pengeluaran;
               }]
           });
     });
-    
+
       $("#kas_masuk").click(function(){
         $("#kontenku").load("<?php echo base_url ?>page/kas_masuk.php");
       });

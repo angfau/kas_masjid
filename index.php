@@ -279,8 +279,8 @@ $saldo = $pemasukan - $pengeluaran;
     $(document).ready(function() {
 
         $.toast({
-            heading: 'Selamat Datang di Kas Administrator',
-            text: 'Aplikasi pengeloala Kas Keuangan by Administrator.',
+            heading: 'Selamat Datang',
+            text: 'Aplikasi pengeloala Kas Keuangan Masjid Nurul Huda.',
             position: 'top-right',
             loaderBg: '#ff6849',
             icon: 'info',
@@ -301,6 +301,7 @@ $saldo = $pemasukan - $pengeluaran;
         //           categories: ['data']
         //       },
 
+<<<<<<< HEAD
         //       series: [{
         //           type: 'pie',
         //           allowPointSelect: true,
@@ -366,12 +367,24 @@ $saldo = $pemasukan - $pengeluaran;
         ?>
     }]
 });
+=======
+              series: [{
+                  type: 'pie',
+                  allowPointSelect: true,
+                  keys: ['name', 'y', 'selected', 'sliced'],
+                  data: [
+                  <?php
+                        echo "['Pemasukan',   ".$pemasukan.",'false'],";
+                        echo "['Pengeluaran',   ".$pengeluaran.",'false'],";
+                        echo "['Saldo',   ".$saldo.",'false'],";      
+                  ?>
+                     
+                  ],
+                  showInLegend: true
+              }]
+          });
+>>>>>>> 1bd8daf089e9494a9eb80f355472fde5cf6b09c6
     });
-
-    
-          
-        
-
 
       $("#kas_masuk").click(function(){
         $("#kontenku").load("<?php echo base_url ?>page/kas_masuk.php");

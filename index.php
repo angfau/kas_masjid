@@ -301,7 +301,6 @@ $saldo = $pemasukan - $pengeluaran;
         //           categories: ['data']
         //       },
 
-<<<<<<< HEAD
         //       series: [{
         //           type: 'pie',
         //           allowPointSelect: true,
@@ -323,69 +322,50 @@ $saldo = $pemasukan - $pengeluaran;
         //   });
 
 
-            Highcharts.chart('crt', {
-    chart: {
-        type: 'column',
-        options3d: {
-            enabled: true,
-            alpha: 10,
-            beta: 25,
-            depth: 70
-        }
-    },
-    title: {
-        text: 'Data Chart Keuangan'
-    },
-    subtitle: {
-        text: 'Data On <?= $fm->formatDate(date('Y-m-d') ); ?>'
-    },
-    plotOptions: {
-        column: {
-            depth: 25
-        }
-    },
-    xAxis: {
-        categories: ['Pengeluaran','Pemasukan','saldo'],
-        labels: {
-            skew3d: true,
-            style: {
-                fontSize: '16px'
-            }
-        }
-    },
-    yAxis: {
-        title: {
-            text: null
-        }
-    },
-    series: [{
-        name: 'Chart Keuangan',
-        data: 
-        // [2, 3, null, 4, 0, 5, 1, 4, 6, 3]
-        <?php  
-            echo "[".$pemasukan.",".$pengeluaran.",".$saldo."]"
-        ?>
-    }]
-});
-=======
-              series: [{
-                  type: 'pie',
-                  allowPointSelect: true,
-                  keys: ['name', 'y', 'selected', 'sliced'],
-                  data: [
-                  <?php
-                        echo "['Pemasukan',   ".$pemasukan.",'false'],";
-                        echo "['Pengeluaran',   ".$pengeluaran.",'false'],";
-                        echo "['Saldo',   ".$saldo.",'false'],";      
-                  ?>
-                     
-                  ],
-                  showInLegend: true
-              }]
-          });
->>>>>>> 1bd8daf089e9494a9eb80f355472fde5cf6b09c6
+        Highcharts.chart('crt', {
+            chart: {
+                type: 'column',
+                options3d: {
+                    enabled: true,
+                    alpha: 10,
+                    beta: 25,
+                    depth: 70
+                }
+            },
+            title: {
+                text: 'Data Chart Keuangan'
+            },
+            subtitle: {
+                text: 'Data On <?= $fm->formatDate(date('Y-m-d') ); ?>'
+            },
+            plotOptions: {
+                column: {
+                    depth: 25
+                }
+            },
+            xAxis: {
+                categories: ['Pengeluaran','Pemasukan','saldo'],
+                labels: {
+                    skew3d: true,
+                    style: {
+                        fontSize: '16px'
+                    }
+                }
+            },
+            yAxis: {
+                title: {
+                    text: null
+                }
+            },
+            series: [{
+                name: 'Chart Keuangan',
+                data: 
+                <?php  
+                    echo "[".$pemasukan.",".$pengeluaran.",".$saldo."]"
+                ?>
+            }]
+        });
     });
-
       $("#kas_masuk").click(function(){
         $("#kontenku").load("<?php echo base_url ?>page/kas_masuk.php");
       });

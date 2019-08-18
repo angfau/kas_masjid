@@ -275,8 +275,8 @@ $saldo = $pemasukan - $pengeluaran;
     $(document).ready(function() {
 
         $.toast({
-            heading: 'Selamat Datang di Kas Administrator',
-            text: 'Aplikasi pengeloala Kas Keuangan by Administrator.',
+            heading: 'Selamat Datang',
+            text: 'Aplikasi pengeloala Kas Keuangan Masjid Nurul Iman.',
             position: 'top-right',
             loaderBg: '#ff6849',
             icon: 'info',
@@ -303,30 +303,17 @@ $saldo = $pemasukan - $pengeluaran;
                   keys: ['name', 'y', 'selected', 'sliced'],
                   data: [
                   <?php
-
-                
-                                echo "['Pemasukan',   ".$pemasukan.",'false'],";
-                                echo "['Pengeluaran',   ".$pengeluaran.",'false'],";
-                                echo "['Saldo',   ".$saldo.",'false'],";
-                       
-                
+                        echo "['Pemasukan',   ".$pemasukan.",'false'],";
+                        echo "['Pengeluaran',   ".$pengeluaran.",'false'],";
+                        echo "['Saldo',   ".$saldo.",'false'],";      
                   ?>
                      
                   ],
                   showInLegend: true
               }]
           });
-
-
-
-
     });
-
     
-          
-        
-
-
       $("#kas_masuk").click(function(){
         $("#kontenku").load("<?php echo base_url ?>page/kas_masuk.php");
       });

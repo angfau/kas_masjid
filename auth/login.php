@@ -66,8 +66,8 @@ if(isset($_POST['login-submit'])) {
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <style>
 body {
-    padding-top: 90px;
-    background-image: url(../assets/Background.jpg);
+    padding-top: 100px;
+    background-image: url(../assets/masjidlogin.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
